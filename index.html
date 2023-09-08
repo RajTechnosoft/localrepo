@@ -1,1 +1,131 @@
-<p>hello raj mishra </p>
+<html>
+	<head>
+	
+		
+		
+		<style>
+			*{
+			margin:0px;
+			padding:0px;
+			
+			}
+			body{background-color:black;
+			}
+			#border{
+			 
+			 padding:2px;
+			 background-color:white;
+			 position:absolute;
+			 width:700px;
+			 height:400px;
+			 top:100px;
+			 left:300px;
+			 width:700px;
+			 height:400px;
+			 border-radius:0px 20px 20px 0px;
+			}
+			#outbox{
+			 border:2px solid white;
+			 background-color:black;
+			 position:absolute;
+			 top:210px;
+			 left:1019px;
+			 width:50px;
+			 height:150px;
+			 border-radius:0px 20px 20px 0px;
+			 
+			 animation-delay:.1s;
+			}
+			@keyframes charging1{
+			from{background-color:black;}
+			to{background-color:green;}
+			}
+			
+		    #box{
+			 background-color:red;
+			 width:0px;
+			 height:400px;
+			 position:absolute;
+			 border-radius:0px 20px 20px 0px;
+			 
+			}
+			@keyframes charging
+			{
+			0%{background-color:green;
+			   width:0px;
+			   }
+			25%{background-color:green;
+			width:175px;}
+			
+			50%{backround-color:green;
+			width:350px;
+			}
+			75%{background-color:green;
+			width:525px;}
+			90%{background-color:green;
+			width:607px;}
+			100%{background-color:red;
+			width:700px;}
+			}
+			
+			
+			@keyframes content{
+			0%{color:white;}
+			100%{color:orange;}
+			}
+			
+			#discharge{
+			position:absolute;
+			bottom:120px;
+			left:720px;
+			background-color:red;
+			}
+			#charge{
+			position:absolute;
+			bottom:120px;
+			left:500px;
+			background-color:blue;
+			}
+			.btn{
+		     width:150px;
+			 height:60px;
+			 color:white;
+			 font-size:20px;
+			 border-radius:40px;
+			 
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id= "border">
+		<div id= "box">
+		<div style="color:white;
+		            position:absolute;
+					top:100px;
+					left:170px;
+					font-size:35px;
+
+					">
+					<h1>battery</h1>
+		<h1>Charging</h1>
+		</div>
+		</div>
+		</div>
+		<div id="outbox">
+		</div>
+		<button id="charge" class="btn">Start</button>
+		<button id="discharge" class="btn">stop</button>
+	</body>
+	<script>
+	charge.addEventListener("click", function(){
+	box.style.animation = "charging 10s linear infinite";
+	outbox.style.animation = "charging1 2s linear infinite";
+	});
+	discharge.addEventListener("click", function(){
+	box.style.animation = "";
+	outbox.style.animation = "";
+	});
+	
+	</script>
+</html>
